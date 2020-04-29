@@ -1,7 +1,9 @@
 import sys
 import wave
 
-import GPO.release.programConfig as conf # Здесь лежит путь до файла
+import numpy
+import matplotlib.pyplot as plt
+
 
 
 
@@ -9,7 +11,7 @@ def main():
     #wav = wave.open(conf.file_path + 'test.wav', 'r')
     wav = wave.open(r'../File/test.wav', 'r')
     (nchannels, sampwidth, framerate, nframes, comptype, compname) = wav.getparams()
-    #content = wav.readframes(nframes)
+    content = wav.readframes(nframes)
     wav.close()
     print('nchannels : ', nchannels,
           '\nsampwidth : ',sampwidth,
@@ -17,6 +19,14 @@ def main():
           '\nnframes : ', nframes,
           '\ncomptype : ', comptype,
           '\ncompname : ', compname)
+
+    print(content)
+    samples = numpy.frombuffer(content, dtype=numpy.int16)
+    print(samples)
+
+    plt.plot(samples)
+    plt.ylabel('some numbers')
+    plt.show()
 
     #txt = open('text.txt', 'w')
     #txt.write("lol")
