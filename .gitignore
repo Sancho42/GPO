@@ -1,52 +1,20 @@
-# Prerequisites
-*.d
+# Release
+*x64/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Visual Studio
+*.sln
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Pycharm
+*.idea
 
-# Precompiled Headers
-*.gch
-*.pch
+# VS code
+*.vs
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# other
+*__pycache__
+*.pyproj
+*.vcxproj
+*.vcxproj.user
+*test_cs
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+!/dll/x64*

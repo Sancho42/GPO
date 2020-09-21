@@ -1,0 +1,15 @@
+freq_mask_border = false
+freq_mask_delta = 1
+freq_mask_ksi = 0.02
+freq_mask_rho = 0.2
+pitch_freq_high = 400
+pitch_freq_low = 50
+pitch_num_harmonics = 3
+scale_form = mel
+scale_freq_high = 1000
+scale_freq_low = 100
+scale_num_channels = 100
+signal_sampling_freq = 0
+spectrum_ksi = 0.02
+vocal_min_interval = 0.033
+vocal_min_nonvocal = 0.033
