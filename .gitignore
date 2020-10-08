@@ -16,5 +16,6 @@
 *.vcxproj
 *.vcxproj.user
 *test_cs
+*Debug/
 
 !/dll/x64*
