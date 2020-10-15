@@ -46,9 +46,9 @@ int da()
     //        }
     //    }
 
-    //    spl_freq_scale_save(scale, Fr, K);
+    //    spl_freq_scale_save(scale, Fr, K);          
 
-    //    size_t spec = spl_spectrum_calc_wav_file(K, Fr, signal_wav, spectrum, 0.001);
+    //    size_t spec = spl_spectrum_calc_wav_file(K, Fr, signal_wav, spectrum, 0.001); 
     //}
     //else if (F == 1)
     //{
