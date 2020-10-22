@@ -15,6 +15,5 @@
 *.pyproj
 
 *test_cs
-*Debug/
 
-!/dll/x64*
+

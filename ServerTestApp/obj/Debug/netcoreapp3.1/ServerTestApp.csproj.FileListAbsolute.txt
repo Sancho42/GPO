@@ -1,0 +1,13 @@
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\bin\Debug\netcoreapp3.1\ServerTestApp.exe
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\bin\Debug\netcoreapp3.1\ServerTestApp.deps.json
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\bin\Debug\netcoreapp3.1\ServerTestApp.runtimeconfig.json
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\bin\Debug\netcoreapp3.1\ServerTestApp.runtimeconfig.dev.json
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\bin\Debug\netcoreapp3.1\ServerTestApp.dll
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\bin\Debug\netcoreapp3.1\ServerTestApp.pdb
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.csprojAssemblyReference.cache
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.AssemblyInfoInputs.cache
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.AssemblyInfo.cs
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.csproj.CoreCompileInputs.cache
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.dll
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.pdb
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\ServerTestApp\obj\Debug\netcoreapp3.1\ServerTestApp.genruntimeconfig.cache
