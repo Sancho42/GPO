@@ -1,0 +1,2 @@
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\io.pdb
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\io\Debug\io.pdb

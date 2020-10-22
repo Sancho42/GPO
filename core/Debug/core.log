@@ -1,0 +1,15 @@
+﻿  config.cpp
+  conv.cpp
+  mask.cpp
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\core\mask.cpp(215,26): warning C4018: <: несоответствие типов со знаком и без знака
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\core\mask.cpp(397,23): warning C4018: <: несоответствие типов со знаком и без знака
+  matrix.cpp
+  scale.cpp
+  common.cpp
+  spectrum.cpp
+  vocal.cpp
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\core\vocal.cpp(320,23): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  core.vcxproj -> E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\core.lib
+  Скопировано файлов:         1.
+  Скопировано файлов:         1.

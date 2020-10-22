@@ -21,35 +21,35 @@ class test_scale_generate_t : public test_error_t
     }
 } test_scale_generate;
 
-class test_scale_form_estimate_t : public test_t
-{
-public:
-    const char *name() { return "scale_form_estimate"; }
-    void test() {
-        freq_scale_t sc(256);
-        scale_point_t point1(0, 50.0), point2(0, 4000.0);
-
-        scale_form_t form;
-        scale_form_t forms[] = {
-            scale_form_t::linear, 
-            scale_form_t::log, 
-            scale_form_t::mel, 
-            scale_form_t::bark, 
-            scale_form_t::model, 
-            scale_form_t::unknown 
-        };
-        for (int i = 0; forms[i] != scale_form_t::unknown; i++) {
-            sc.generate(forms[i], point1, point2);
-            if (!sc.generate(forms[i], point1, point2)) {
-                fail("Can't generate scale '%s'", freq_scale_t::scale_form_name(forms[i]));
-            }
-            form = sc.estimate_form();
-            assert(form == forms[i], "Generated scale '%s', but estimated scale '%s'", 
-                freq_scale_t::scale_form_name(forms[i]), 
-                freq_scale_t::scale_form_name(form));
-        }
-    }
-} test_scale_form_estimate;
+//class test_scale_form_estimate_t : public test_t
+//{
+//public:
+//    const char *name() { return "scale_form_estimate"; }
+//    void test() {
+//        freq_scale_t sc(256);
+//        scale_point_t point1(0, 50.0), point2(0, 4000.0);
+//
+//        scale_form_t form;
+//        scale_form_t forms[] = {
+//            scale_form_t::linear, 
+//            scale_form_t::log, 
+//            scale_form_t::mel, 
+//            scale_form_t::bark, 
+//            scale_form_t::model, 
+//            scale_form_t::unknown 
+//        };
+//        for (int i = 0; forms[i] != scale_form_t::unknown; i++) {
+//            sc.generate(forms[i], point1, point2);
+//            if (!sc.generate(forms[i], point1, point2)) {
+//                fail("Can't generate scale '%s'", freq_scale_t::scale_form_name(forms[i]));
+//            }
+//            form = sc.estimate_form();
+//            assert(form == forms[i], "Generated scale '%s', but estimated scale '%s'", 
+//                freq_scale_t::scale_form_name(forms[i]), 
+//                freq_scale_t::scale_form_name(form));
+//        }
+//    }
+//} test_scale_form_estimate;
 
 class test_scale_interp_t : public test_t
 {

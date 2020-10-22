@@ -43,7 +43,7 @@ int main(int argc, const char *argv[]) {
         freq_t F1 = 50.0, F2 = 4000.0;
         
 
-        spl_freq_scale_generate(K, &Fr, freq_scale_model, F1, F2);
+        //spl_freq_scale_generate(K, &Fr, freq_scale_model, F1, F2);
 
         spl_freq_scale_save(scale_test, &Fr, K);
 
