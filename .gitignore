@@ -2,19 +2,18 @@
 *x64/
 
 # Visual Studio
-*.sln
+
 
 # Pycharm
 *.idea
 
 # VS code
-*.vs
+.vs
 
 # other
 *__pycache__
 *.pyproj
-*.vcxproj
-*.vcxproj.user
+
 *test_cs
 *Debug/
 
