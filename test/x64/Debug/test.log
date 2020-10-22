@@ -1,0 +1,25 @@
+﻿scale-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+spectrum-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+vocal-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+config-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+conv-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+io-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+mask-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::fail(char const *,char *)" (?fail@test_t@test@@IEAAXPEBDPEAD@Z)"
+scale-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+spectrum-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+vocal-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+config-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+conv-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+io-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+mask-test.obj : error LNK2001: неразрешенный внешний символ ""protected: static class test::test_t * test::test_t::tests" (?tests@test_t@test@@1PEAV12@EA)"
+conv-test.obj : error LNK2019: ссылка на неразрешенный внешний символ "protected: void __cdecl test::test_t::tic(void)" (?tic@test_t@test@@IEAAXXZ) в функции "public: virtual void __cdecl test::test_cconv_fft_t::test(void)" (?test@test_cconv_fft_t@0@UEAAXXZ)
+mask-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::tic(void)" (?tic@test_t@test@@IEAAXXZ)"
+spectrum-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::tic(void)" (?tic@test_t@test@@IEAAXXZ)"
+vocal-test.obj : error LNK2001: неразрешенный внешний символ ""protected: void __cdecl test::test_t::tic(void)" (?tic@test_t@test@@IEAAXXZ)"
+conv-test.obj : error LNK2019: ссылка на неразрешенный внешний символ "protected: unsigned long __cdecl test::test_t::toc(void)" (?toc@test_t@test@@IEAAKXZ) в функции "public: virtual void __cdecl test::test_cconv_fft_t::test(void)" (?test@test_cconv_fft_t@0@UEAAXXZ)
+mask-test.obj : error LNK2001: неразрешенный внешний символ ""protected: unsigned long __cdecl test::test_t::toc(void)" (?toc@test_t@test@@IEAAKXZ)"
+spectrum-test.obj : error LNK2001: неразрешенный внешний символ ""protected: unsigned long __cdecl test::test_t::toc(void)" (?toc@test_t@test@@IEAAKXZ)"
+vocal-test.obj : error LNK2001: неразрешенный внешний символ ""protected: unsigned long __cdecl test::test_t::toc(void)" (?toc@test_t@test@@IEAAKXZ)"
+test.obj : error LNK2019: ссылка на неразрешенный внешний символ spl_freq_scale_generate в функции main
+test.obj : error LNK2019: ссылка на неразрешенный внешний символ spl_freq_scale_save в функции main
+E:\User\Desktop\гпопрограмм2\spl-c-master\x64\Debug\test.exe : fatal error LNK1120: неразрешенных внешних элементов: 6

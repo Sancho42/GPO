@@ -1,0 +1,2 @@
+E:\1SpeechComplex\СтарыеФайлы\гпопрограмм2\spl-c-master\x64\Debug\io.pdb
+E:\1SpeechComplex\СтарыеФайлы\гпопрограмм2\spl-c-master\io\x64\Debug\io.pdb
