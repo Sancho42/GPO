@@ -1,5 +1,4 @@
 ﻿  splServer.cpp
-E:\1SpeechComplex\Исходники\SpeechComplex\GPO\splServer\splServer.cpp(143,27): warning C4018: <: несоответствие типов со знаком и без знака
-E:\1SpeechComplex\Исходники\SpeechComplex\GPO\splServer\splServer.cpp(259,20): warning C4477: "printf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "std::string"
-E:\1SpeechComplex\Исходники\SpeechComplex\GPO\splServer\splServer.cpp(191,9): warning C4101: iSendResult: неиспользованная локальная переменная
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\splServer\splServer.cpp(141,27): warning C4018: <: несоответствие типов со знаком и без знака
+E:\1SpeechComplex\Исходники\SpeechComplex\GPO\splServer\splServer.cpp(190,9): warning C4101: iSendResult: неиспользованная локальная переменная
   splServer.vcxproj -> E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\splServer.exe

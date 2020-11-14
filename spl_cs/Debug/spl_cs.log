@@ -1,8 +1,1 @@
-﻿  Stdafx.cpp
-  AssemblyInfo.cpp
-  spl_cs.cpp
-  Создание кода...
-  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-     Создается библиотека E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_cs.lib и объект E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_cs.exp
-  spl_cs.vcxproj -> E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_cs.dll
+﻿

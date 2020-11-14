@@ -50,7 +50,11 @@ abstract_fstream::abstract_fstream(
 }
 
 void abstract_fstream::close() {
-	CLOSE_FILE(FH);
+	try {
+		CLOSE_FILE(FH);
+	}
+	catch(...)
+	{ }
 }
 
 #ifdef _IO_FILE_WINDOWS_

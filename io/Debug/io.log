@@ -1,6 +1,2 @@
-﻿  iowave.cpp
-  iobuf.cpp
-  iofile.cpp
-  iomic.cpp
-  Создание кода...
+﻿  iofile.cpp
   io.vcxproj -> E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\io.lib

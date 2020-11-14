@@ -1,7 +1,1 @@
-﻿  in_threads.cpp
-  spl_c.cpp
-  spl_cpp.cpp
-  spl_threads.cpp
-  Создание кода...
-     Создается библиотека E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_c.lib и объект E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_c.exp
-  spl_c.vcxproj -> E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_c.dll
+﻿  spl_c.vcxproj -> E:\1SpeechComplex\Исходники\SpeechComplex\GPO\Debug\spl_c.dll

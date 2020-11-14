@@ -40,18 +40,18 @@ enum CommCode {
     VOCAL_GRAF = 512
 };
 
-void scale_generate(freq_t* Fr, int K, freq_t F1 = 50.0, freq_t F2 = 4000.0)
+void scale_generate(freq_t *Fr, int K, freq_t F1 = 50.0, freq_t F2 = 4000.0)
 {
     spl_freq_scale_generate(K, Fr, freq_scale_model, F1, F2);
 
     spl_freq_scale_save(scale, Fr, K);
 }
 
-void spectrum_calc(freq_t* Fr, int K, const char* signal_wav)
+void spectrum_calc(freq_t *Fr, int K, const char* signal_wav)
 {
-    size_t spec = spl_spectrum_calc_wav_file(K, Fr, signal_wav, spectrum, 0.001);
+    spl_freq_scale_load(scale, &Fr, &K);
 
-    spl_freq_scale_save(scale, Fr, K);
+    size_t spec = spl_spectrum_calc_wav_file(K, Fr, signal_wav, spectrum, 0.001);
 }
 
 void mask_calc(freq_t* Fr, int K)
@@ -85,7 +85,6 @@ int sendMes(std::string mes, SOCKET ClientSocket)
         return 1;
     }
     printf("Bytes sent: %d\n", iSendResult);
-    delete[] ans;
     return 0;
 }
 
@@ -103,7 +102,6 @@ int sendMes(std::vector<char> bytes, SOCKET ClientSocket)
         return 1;
     }
     printf("Bytes sent: %d\n", iSendResult);
-    delete[] ans;
     return 0;
 }
 
@@ -126,14 +124,14 @@ std::string command(std::string mes, SOCKET ClientSocket)
     {
         int K = 256;
         freq_t* Fr = new freq_t[K];
-        freq_t F1 = atoi(mes.substr(3, 3).c_str());
-        freq_t F2 = atoi(mes.substr(6, 4).c_str());
+        freq_t F1 = atoi(mes.substr(3, 3).data());
+        freq_t F2 = atoi(mes.substr(6, 4).data());
         scale_generate(Fr, K, F1, F2);
         break;
     }
     case 311:
     {
-        const char* signal_wav = mes.substr(3).c_str();
+        const char* signal_wav = &mes[3];
         int K = 256;
         freq_t* Fr = new freq_t[K];
         spectrum_calc(Fr, K, signal_wav);
@@ -170,6 +168,7 @@ std::string command(std::string mes, SOCKET ClientSocket)
     }
     default:
     {
+        printf("errMes\n");
         return "errMes";
     }
     }
@@ -252,24 +251,18 @@ int __cdecl main(void)
     do {
         memset(recvbuf, 0, recvbuflen);
         iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
-        if (iResult > 1) {
-            printf("Bytes received: %d\n", iResult);
+        printf("Bytes received: %d\n", iResult);
+            
+        printf("Message - %s\n", recvbuf);
+        mes = ("%s", recvbuf);
 
-            mes = (const char*)recvbuf;
-            printf("Message - %s\n", mes);
+        std::string err = command(mes, ClientSocket);
 
-            std::string err = command(mes, ClientSocket);
-        }
-        else if (iResult == 1)
-            printf("Connection closing...\n");
-        else {
-            printf("recv failed with error: %d\n", WSAGetLastError());
-            closesocket(ClientSocket);
-            WSACleanup();
-            return 1;
-        }
-
-    } while (iResult > 2);
+        /*printf("recv failed with error: %d\n", WSAGetLastError());
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 1;*/        
+    } while (iResult > 0);
 
     iResult = shutdown(ClientSocket, SD_SEND);
     if (iResult == SOCKET_ERROR) {
